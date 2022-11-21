@@ -18,4 +18,10 @@ This is one of the broadest categories in CTF challenges, but usually revolves a
 ### Steganograpy
 This fun category is all about hiding information in plain sight. The player is usually given a file that contains the flag and have to figure out how to extract it. The given file could be an image or even an undefined type of file... often times things are not what they seem here! Brush up on EXIF data, magic numbers and image editing if you want to dive into these challenges.
 
-### 
+### Coding
+A very beginner-friendly category that will test your coding skills. Are you a fan of automation of repetitive tasks? This is the place to be for you. The flag may have been compressed a thousand times or perhaps you have to beat a game that needs you to click hundreds of times per second! You'll have to outsmart the machine to get the prize.
+
+### Reverse Engineering
+If you want to deep dive into binaries and feel the urge to incessently look at lines of Assembly code, look no further. These challenges provide a binary executable that could, for instance, ask for a password from the user. The goal is the disassemble the piece of software to understand what the right input is that will give out the flag.
+
+Now that we've had a look at the different categories, it's time to get started! Feel free to explore the categories in any order, according to your interests. There are also many different categories that haven't been mentioned here, so feel free to explore this wiki to get more information.
