@@ -25,3 +25,4 @@ A very beginner-friendly category that will test your coding skills. Are you a f
 If you want to deep dive into binaries and feel the urge to incessently look at lines of Assembly code, look no further. These challenges provide a binary executable that could, for instance, ask for a password from the user. The goal is the disassemble the piece of software to understand what the right input is that will give out the flag.
 
 Now that we've had a look at the different categories, it's time to get started! Feel free to explore the categories in any order, according to your interests. There are also many different categories that haven't been mentioned here, so feel free to explore this wiki to get more information.
+
