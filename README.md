@@ -6,7 +6,16 @@ Welcome to the fantastic world of Capture The Flag events! These are the perfect
 A Capture The Flag event is usually comprised of multiple challenges where the aim is, as the name suggests, to find the flag, individually or in a team. The flag is usually a string of text following a specific pattern, so make sure to read the event's instructions to find out what the format is! [INSERT EXAMPLE]
 
 ## Types of challenges
+
 CTFs sometimes focus on a single category of challenge, but it is more common to find challenges belonging to multiple categories so participants can choose what to tackle. Some of the most common categories are:
 
 ### Cryptography
-Cryptography 
+Cryptography is the practice of securing communication by making the data incomprehensible to the parties that aren't meant to access it. Thus, cryptography challenges tend to offer a file or sample binary that contains the information. The key is finding what method has been used to obfuscate the flag and figure out a way to extract it. Make sure to read on cyphers if you want to tackle this category!
+
+### Web Exploitation
+This is one of the broadest categories in CTF challenges, but usually revolves around gaining access to a web service to reach the flag. This is usually achieved by exploiting a vulnerability in the service, the server it sits on or the protocol it uses to communicate. Page source inspection, SQL injection and cross-site scripting are your friends here.
+
+### Steganograpy
+This fun category is all about hiding information in plain sight. The player is usually given a file that contains the flag and have to figure out how to extract it. The given file could be an image or even an undefined type of file... often times things are not what they seem here! Brush up on EXIF data, magic numbers and image editing if you want to dive into these challenges.
+
+### 
