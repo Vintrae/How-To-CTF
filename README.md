@@ -1,5 +1,3 @@
-# How To CTF
-
 Welcome to the fantastic world of Capture The Flag events! These are the perfect chance to hone your Cybersecurity skills and put them to the test. This guide will go over everything you need to know before partaking in a CTF.
 
 ## What is a CTF?
