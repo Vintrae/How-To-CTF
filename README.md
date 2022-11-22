@@ -24,5 +24,11 @@ A very beginner-friendly category that will test your coding skills. Are you a f
 ### Reverse Engineering
 If you want to deep dive into binaries and feel the urge to incessently look at lines of Assembly code, look no further. These challenges provide a binary executable that could, for instance, ask for a password from the user. The goal is the disassemble the piece of software to understand what the right input is that will give out the flag.
 
-Now that we've had a look at the different categories, it's time to get started! Feel free to explore the categories in any order, according to your interests. There are also many different categories that haven't been mentioned here, so feel free to explore this wiki to get more information.
+Now that we've had a look at the different categories, it's time to get started! Feel free to explore the categories in any order, according to your interests. There are also many different categories that haven't been mentioned here, so come back to this wiki at any time to get more information.
+
+## Getting started
+If you do not know where to start, our recommendation is you read our Linux guide. It will give you some basic understanding of some Linux tools and commands that will come in handy in your journey.
+
+
+
 
