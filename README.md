@@ -5,7 +5,7 @@ A Capture The Flag event is usually comprised of multiple challenges where the a
 
 Here's an example! This is a flag hidden inside the html code of a website:
 
-![Example of a flag hidden inside a website's source code](https://github.com/Vintrae/How-To-CTF/blob/main/images/flag_sample.png "Flag hidden inside a website's source code")
+![Example of a flag hidden inside a website's source code](/images/flag_sample.png "Flag hidden inside a website's source code")
 
 ## Types of challenges
 
