@@ -5,9 +5,9 @@ Welcome to the fantastic world of Capture The Flag events! These are the perfect
 ## What is a CTF?
 A Capture The Flag event is usually comprised of multiple challenges where the aim is, as the name suggests, to find the flag, individually or in a team. The flag is usually a string of text following a specific pattern, so make sure to read the event's instructions to find out what the format is!
 
-Here's an example!
+Here's an example! This is a flag hidden inside the html code of a website:
 
-![Example Flag Image](https://github.com/Vintrae/How-To-CTF/blob/main/images/flag_sample.png "Example Flag Image")
+![Example of a flag hidden inside a website's source code](https://github.com/Vintrae/How-To-CTF/blob/main/images/flag_sample.png "Flag hidden inside a website's source code")
 
 ## Types of challenges
 
