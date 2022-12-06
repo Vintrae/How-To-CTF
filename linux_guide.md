@@ -108,9 +108,11 @@ can check this flags:
 Here you can see that for every entry listed the first flag indicates whether it's a directory and then there are 3 groups of
 3 letters each, which indicate whether that group can read/write/execute (r/w/x) the file (folders need execution permissions). Here is
 a basic table to understand it with the file `my_script` as an example:
+
 | User         | Group     | Other |
 |--------------|-----------|-------|
 | rwx          | r-x       | r-x   |
+
 User refers to the owner of the file, indicated by the first name in the line of the `ls -lah` output. In this case the owner is
 `root`. Group refers to the owning group for the file, indicated by the second name in the line of the output, which in this case is
 also `root`. By default users have a group created with their same name that they automatically belong to and `root` is the highest
