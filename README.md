@@ -29,7 +29,7 @@ If you want to deep dive into binaries and feel the urge to incessently look at 
 Now that we've had a look at the different categories, it's time to get started! Feel free to explore the categories in any order, according to your interests. There are also many different categories that haven't been mentioned here, so come back to this wiki at any time to get more information.
 
 ## Getting started
-If you do not know where to start, our recommendation is you read our Linux guide. It will give you some basic understanding of some Linux tools and commands that will come in handy in your journey.
+If you do not know where to start, our recommendation is you read our [Linux guide](https://vintrae.github.io/How-To-CTF/linux_guide). It will give you some basic understanding of some Linux tools and commands that will come in handy in your journey.
 
 
 
