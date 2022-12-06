@@ -19,26 +19,34 @@ Despite having a desktop to work with, it's about time we get familiar with the 
 in Windows), since most tools won't have a GUI (Graphical User Interface) and will have to be run from the
 terminal instead, which will most likely be the terminal we know as **bash**. Once you open the terminal, you will 
 find the following: 
+
 !["Linux terminal"](https://github.com/Vintrae/How-To-CTF/blob/main/images/linux_cmd.png?raw=true "Linux terminal")
+
 It is here that you can type your commands. We recommend you follow along with this guide to get some practice
 going, which is the best way to learn.
 
 ### Directories, files and permissions
 Whenever you open the terminal you will be put into your home directory. In order to check which directory we are
 in we can use the `pwd` (Print Working Directory) command.
+
 !["Output of the pwd command"](https://github.com/Vintrae/How-To-CTF/blob/main/images/linux_pwd.png?raw=true "Output of the pwd command")
+
 As you can see, in this example the current directory is `/home/john.doe`. What does this mean? It's time we talked
 file structures! Most Linux-based OS have the same file structure, which has the root of the filesystem represented
 by `/`. Often times we look at filesystem as trees we go up and down in, so this would be the top level. In order
 to explore this, we can use the `ls` (List) command. If we type it on its own it lists the contents of the current
 directory, but some commands accept what we know as arguments and if we provide a path to `ls` it will instead list
 the contents of the specified directory. In the following example, `/` is an argument we pass onto `ls`:
+
 !["Listing contents of root directory"](https://github.com/Vintrae/How-To-CTF/blob/main/images/linux_ls.png?raw=true "Listing contents of root directory")
+
 You will see a variety of folders, which some distros will represent with a blue colour. If you remember the previous
 example, you might spot that there's a `home` folder here. Indeed, that is what `/home/john.doe` means: from the root
 go into the `home` folder and then into the `john.doe` folder! But how do we actually go into the folder? In order to 
 do this we have to use the `cd` (Change Directory) command:
+
 !["Changing directories with cd"](https://github.com/Vintrae/How-To-CTF/blob/main/images/linux_cd.png?raw=true "Changing directories with cd")
+
 As you can see the argument in this case is the path of the directory we want to move to. If we provide no arguments
 then `cd` will land us in our home directory, which in **bash** can also be referenced as `~`. Each user has their own
 home directory, usually under a folder of their name in `/home/`. Finally, the current directory can also be referenced 
@@ -60,14 +68,18 @@ adding the following options to it (notice how options are usually indicated by 
 - `-a`: lists **all** contents, including hidden files and folders.
 - `-h`: changes file sizes to be displayed in **human-readable**  sizes (1K 243M 2G).
 The result of running the command with these options results in the following output:
+
 !["Using ls with options"](https://github.com/Vintrae/How-To-CTF/blob/main/images/linux_ls_options.png?raw=true "Using ls with options")
+
 We'll explore what all of this means shortly, but if you ever want to know what flags a command supports, you can use the
 `man` command to find out, passing the command you want to know more about as an argument to it.
 
 So far we have been traversing directories, but we can also create them! The `mkdir` command is our friend here and 
 can be used to create a new directory or series of directories, each separated by a space (remember you can use relative 
 paths to create them in the current directory or absolute paths to choose exactly where to create the folders):
+
 !["Creating directories with mkdir"](https://github.com/Vintrae/How-To-CTF/blob/main/images/linux_mkdir.png?raw=true "Creating directories with mkdir")
+
 In terms of files the same can be achieved using the `touch` command, which creates a new blank file ready for you to edit.
 As an example, let's try creating a Bash script that prints "Hello" to the terminal using `touch my_script`. Now we have to
 edit it, which can be done using any text editor. While you can you whatever you feel comfortable with, some common command-line
@@ -90,7 +102,9 @@ chmod +x my_script
 
 This basically adds the executable (+x) flag to the file so it can be run. This ties back to the `ls -lah` command, where we
 can check this flags:
+
 !["Using ls with options"](https://github.com/Vintrae/How-To-CTF/blob/main/images/linux_ls_options_2.png?raw=true "Using ls with options")
+
 Here you can see that for every entry listed the first flag indicates whether it's a directory and then there are 3 groups of
 3 letters each, which indicate whether that group can read/write/execute (r/w/x) the file (folders need execution permissions). Here is
 a basic table to understand it with the file `my_script` as an example:
@@ -107,7 +121,9 @@ same resulting modes by using the full-fledged command `chmod u=rwx,g=rx,o=rx my
 the owning user and group, but you may need elevated permissions to do so if you are not the owner of the file.
 
 As the final step, you can run the script we have created by referencing it with `./my_script`, like so:
+
 !["Running a Bash script"](https://github.com/Vintrae/How-To-CTF/blob/main/images/linux_script.png?raw=true "Running a Bash script")
+
 It works!
 
 To end this guide there are 4 quick commands left to cover, which are the following:
