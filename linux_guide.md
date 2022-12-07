@@ -25,7 +25,7 @@ find the following:
 It is here that you can type your commands. We recommend you follow along with this guide to get some practice
 going, which is the best way to learn.
 
-### Directories, files and permissions
+### Directories and file structure
 Whenever you open the terminal you will be put into your home directory. In order to check which directory we are
 in we can use the `pwd` (Print Working Directory) command.
 
@@ -61,7 +61,16 @@ provide an **absolute path**, which is the path starting from the root. In our e
 `/home/john.doe/script.py` and in this case the Bash terminal doesn't care where we are, since it has the full directions
 to retrieve the file anyway.
 
-Before moving on to how to create folders and files, let's introduce the concept of options (or flags). Some commands offer
+So far we have been traversing directories, but we can also create them! The `mkdir` (Make Directory) command is our 
+friend here and can be used to create a new directory or series of directories, each separated by a space (remember 
+you can use relative paths to create them in the current directory or absolute paths to choose exactly where to create 
+the folders):
+
+!["Creating directories with mkdir"](https://github.com/Vintrae/How-To-CTF/blob/main/images/linux_mkdir.png?raw=true "Creating directories with mkdir")
+
+### A small note on command options 
+
+Before moving on to how to create files, let's introduce the concept of options (or flags). Some commands offer
 additional functionality we can enable and disable to suit our needs. A perfect example of this is `ls`. We will be
 adding the following options to it (notice how options are usually indicated by a single or double dash `-`/`--`:
 - `-l`: display the result in the **long listing** format, also including file attributes and permissions.
@@ -74,18 +83,15 @@ The result of running the command with these options results in the following ou
 We'll explore what all of this means shortly, but if you ever want to know what flags a command supports, you can use the
 `man` command to find out, passing the command you want to know more about as an argument to it.
 
-So far we have been traversing directories, but we can also create them! The `mkdir` command is our friend here and 
-can be used to create a new directory or series of directories, each separated by a space (remember you can use relative 
-paths to create them in the current directory or absolute paths to choose exactly where to create the folders):
+### File creation, edition and execution (now with permissions spice!)
 
-!["Creating directories with mkdir"](https://github.com/Vintrae/How-To-CTF/blob/main/images/linux_mkdir.png?raw=true "Creating directories with mkdir")
-
-In terms of files the same can be achieved using the `touch` command, which creates a new blank file ready for you to edit.
-As an example, let's try creating a Bash script that prints "Hello" to the terminal using `touch my_script`. Now we have to
-edit it, which can be done using any text editor. While you can you whatever you feel comfortable with, some common command-line
-editors are **nano** and **vim**, which can be used with `nano my_script` and `vim my_script` respectively, assuming they
-are installed in your system (if not you can install them by using the `apt install <package_name>` syntax). Write the following
-into it (in vim you'll have to press `i` to enter INSERT MODE so you can type normally):
+In the same way we could create folders using the `mkdir` command, we can do the same with files using the `touch` command, 
+which creates a new blank file ready for you to edit. As an example, let's try creating a Bash script that prints "Hello" 
+to the terminal using `touch my_script`. Now we have to edit it, which can be done using any text editor. While you can you 
+whatever you feel comfortable with, some common command-line editors are **nano** and **vim**, which can be used with 
+`nano my_script` and `vim my_script` respectively, assuming they are installed in your system (if not you can install them 
+by using the `apt install <package_name>` syntax). Write the following into it (in vim you'll have to press `i` to enter 
+INSERT MODE so you can type normally):
 ```bash
 #!/bin/bash
 echo "Hello"
@@ -128,7 +134,10 @@ As the final step, you can run the script we have created by referencing it with
 
 It works!
 
-To end this guide there are 4 quick commands left to cover, which are the following:
+### The graveyard of commands I couldn't place elsewhere.
+
+To end this guide there are 4 quick commands left to cover. Some of them I couldn't mention earlier and some I just forgot! The commands
+are the following:
 - `mv` (Move): can be used to move the file specified by the first argument to the location specified by the second one. This can also
 be used to rename a file by moving it to the same location but giving it a different name.
 - `cp` (Copy): can be used to copy the file specified by the first argument to a different location, or to the same location under a
