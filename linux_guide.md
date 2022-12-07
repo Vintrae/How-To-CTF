@@ -14,7 +14,7 @@ For our purposes, we recommend using [Kali Linux](https://www.kali.org/get-kali/
 features a lot of the tools you will need during your CTF adventures and is also compatible with WSL 2. Without 
 further ado, let's get started!
 
-## Meet your new best friend: the terminal!
+### Meet your new best friend: the terminal!
 Despite having a desktop to work with, it's about time we get familiar with the terminal (known as command prompt
 in Windows), since most tools won't have a GUI (Graphical User Interface) and will have to be run from the
 terminal instead, which will most likely be the terminal we know as **bash**. Once you open the terminal, you will 
@@ -99,8 +99,15 @@ echo "Hello"
 The first line tells the Bash what to open the file with (in this case bash itself, now you know where its binary lies!) and
 the second line is the `echo` command, which prints whatever is passed to it as an argument to the terminal. Now you can save
 the file by pressing `Ctrl+X` on nano or by pressing `ESC` and then typing `:wq` to instruct it to write the changes and quit.
-With this, our file is created! There is one step left though, which is to make the file executable. By default, files are not
-executable and you have to make them so by using the `chmod` (Change Mode) command:
+With this, our file is created! We can check whether it has been saved correclty by checking its contents. To do so we could
+open the file again in an editor, but this time we'll introduce the `cat` (Concatenate) command, which reads data from a file
+and gives its content as an output. In this instance the full command would be `cat my_script`. This approach works fine in this
+case because the file is short, but for longer files it may be troublesome as all the contents are printed at once, so we would
+have to scroll a lot. When we find ourselves in those cases, the `less` command may come handy, as it displays the contents one
+page at a time and we just have to press the spacebar to move pages (pressing the `q` key closes less and goes back to the prompt).
+
+Now there is one step left, which is to make the file executable. By default, files are not executable and you have to make them 
+so by using the `chmod` (Change Mode) command:
 
 ```bash
 chmod +x my_script
