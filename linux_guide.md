@@ -83,7 +83,7 @@ The result of running the command with these options results in the following ou
 We'll explore what all of this means shortly, but if you ever want to know what flags a command supports, you can use the
 `man` command to find out, passing the command you want to know more about as an argument to it.
 
-### File creation, edition and execution (now with permissions spice!)
+### File creation, edition and execution (now permission-flavoured!)
 
 In the same way we could create folders using the `mkdir` command, we can do the same with files using the `touch` command, 
 which creates a new blank file ready for you to edit. As an example, let's try creating a Bash script that prints "Hello" 
