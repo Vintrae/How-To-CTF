@@ -98,7 +98,8 @@ echo "Hello"
 ```
 The first line tells the Bash what to open the file with (in this case bash itself, now you know where its binary lies!) and
 the second line is the `echo` command, which prints whatever is passed to it as an argument to the terminal. Now you can save
-the file by pressing `Ctrl+X` on nano or by pressing `ESC` and then typing `:wq` to instruct it to write the changes and quit.
+the file by pressing `Ctrl+X` on nano or by pressing `ESC` and then typing `:wq` to instruct it to write the changes and quit
+if you are working in vim.
 With this, our file is created! We can check whether it has been saved correclty by checking its contents. To do so we could
 open the file again in an editor, but this time we'll introduce the `cat` (Concatenate) command, which reads data from a file
 and gives its content as an output. In this instance the full command would be `cat my_script`. This approach works fine in this
