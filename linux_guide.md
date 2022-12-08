@@ -9,7 +9,7 @@ available online, think of them as Linux 'flavours' that come bundled with piece
 of needs. Some general-purpose distributions - often shortened as distros - are Ubuntu, Linux Mint and Fedora, for 
 example, which feature similar desktop environments to what you find in Windows. Moreover, you can try them out from 
 your Windows environments thanks to 
-![WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install) (Windows Subsystem for Linux).
+[WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install) (Windows Subsystem for Linux).
 For our purposes, we recommend using [Kali Linux](https://www.kali.org/get-kali/), formerly BackTrack Linux, which 
 features a lot of the tools you will need during your CTF adventures and is also compatible with WSL 2. Without 
 further ado, let's get started!
@@ -105,6 +105,7 @@ and gives its content as an output. In this instance the full command would be `
 case because the file is short, but for longer files it may be troublesome as all the contents are printed at once, so we would
 have to scroll a lot. When we find ourselves in those cases, the `less` command may come handy, as it displays the contents one
 page at a time and we just have to press the spacebar to move pages (pressing the `q` key closes less and goes back to the prompt).
+For `less` there is an additional trick you can do which is using the `-N` option with it, which shows line numbers!
 
 Now there is one step left, which is to make the file executable. By default, files are not executable and you have to make them 
 so by using the `chmod` (Change Mode) command:
